@@ -1,4 +1,6 @@
 """
+Author: Ashley Allen
+Date: January 31, 2023
 
 Listens for task messages on the queue.
 This process runs continously. 

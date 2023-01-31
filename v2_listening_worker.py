@@ -1,4 +1,7 @@
 """
+Author: Ashley Allen
+Date: January 231, 2023
+
     This program listens for work messages contiously. 
     Start multiple versions to add more workers.  
 
