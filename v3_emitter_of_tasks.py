@@ -1,3 +1,12 @@
+"""
+    This program reads in a csv file and sends each row as 
+    a message to a queue on the RabbitMQ server.
+    Tasks are made harder/longer-running by adding dots at the end of the csv row.\
+    
+    Author: Ashley Allen
+    Date: Feb 3, 2023
+"""
+
 import pika
 import sys
 import webbrowser
@@ -86,8 +95,7 @@ def send_message(host: str, queue_name: str, message: str):
 # without executing the code below.
 # If this is the program being run, then execute the code below
 if __name__ == "__main__":  
-    # ask the user if they'd like to open the RabbitMQ Admin site
-    # setting show_offer for RabbitMQ site to off
+    # ask the user if they'd like to open the RabbitMQ Admin website
     show_offer = False
     offer_rabbitmq_admin_site(show_offer)
     # get the message from the command line
